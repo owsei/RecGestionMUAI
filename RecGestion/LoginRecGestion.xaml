@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecGestion.LoginRecGestion"
+             Title="LoginRecGestion"
+             Padding="0,0,0,0">
+
+    <StackLayout Margin="0" 
+                 Orientation="Vertical" >
+
+        <Label Text="RecGestion" 
+               HeightRequest="40" 
+               VerticalTextAlignment="Center" 
+               HorizontalTextAlignment="Center" 
+               BackgroundColor="WhiteSmoke" 
+               FontSize="32"
+              ></Label>
+        
+        <Label Text="Login RecGestión" 
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center" 
+               HeightRequest="60" 
+               FontSize="20"
+               />
+        
+        <BoxView HeightRequest="1" BackgroundColor="Black"></BoxView>
+        <StackLayout HeightRequest="75"></StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Label  Text="Usuario:" 
+                    WidthRequest="100"/>
+            <Entry Placeholder="Enter your name"
+                   x:Name="nombre"
+                   BackgroundColor="WhiteSmoke" WidthRequest="200"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="10" >
+            <Label Text="Contraseña:" 
+                   WidthRequest="100"/>
+            <Entry x:Name="password"
+                   Placeholder="Contraseña" 
+                   WidthRequest="200" 
+                   VerticalOptions="Center"
+                   BackgroundColor="WhiteSmoke"
+                   IsPassword="True"/>
+        </StackLayout>
+        <StackLayout HeightRequest="100">
+            <Label Text="" 
+                   x:Name="URLDestino"
+                   WidthRequest="350"/>
+            <Label Text="" 
+                   x:Name="respuestaLlamada"
+                   WidthRequest="350"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Aceptar" 
+                    WidthRequest="100"
+                    FontSize="12"
+                    Clicked="LearnMore_Clicked">
+            </Button>
+        </StackLayout>
+        
+    </StackLayout>
+    
+
+
+</ContentPage>
